@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/modeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <RadioButton
+            android:id="@+id/addRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dodaj przedmioty" />
+
+        <RadioButton
+            android:id="@+id/checkRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Odhacz przedmioty" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/checkboxesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Warzywa" />
+
+        <CheckBox
+            android:id="@+id/tomatoesCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pomidory" />
+
+        <CheckBox
+            android:id="@+id/cucumbersCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ogórki" />
+
+        <CheckBox
+            android:id="@+id/lettuceCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sałata" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wędliny" />
+
+        <CheckBox
+            android:id="@+id/hamCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Szynka" />
+
+        <CheckBox
+            android:id="@+id/sausageCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kiełbasa" />
+
+        <CheckBox
+            android:id="@+id/baconCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boczek" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pieczywo" />
+
+        <CheckBox
+            android:id="@+id/breadCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chleb" />
+
+        <CheckBox
+            android:id="@+id/rollsCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bułki" />
+
+        <CheckBox
+            android:id="@+id/croissantCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rogaliki" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chipsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Warzywa" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/vegetableChips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleSelection="false">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/tomatoesChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pomidory"
+                android:background="@color/vegetableColor"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cucumbersChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ogórki"
+                android:background="@color/vegetableColor"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/lettuceChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sałata"
+                android:background="@color/vegetableColor"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wędliny" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/meatChips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleSelection="false">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/hamChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Szynka"
+                android:background="@color/meatColor"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/sausageChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kiełbasa"
+                android:background="@color/meatColor"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/baconChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boczek"
+                android:background="@color/meatColor"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pieczywo" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/breadChips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleSelection="false">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/breadChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chleb"
+                android:background="@color/breadColor"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/rollsChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bułki"
+                android:background="@color/breadColor"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/bagelsChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bagietki"
+                android:background="@color/breadColor"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </LinearLayout>
